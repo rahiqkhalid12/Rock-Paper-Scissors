@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper & Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="head">Rock<br>Paper<br>Scissors</h2>
+            <div class="score-container">
+                <p>score</p>
+                <div id="score">0</div>
+            </div>
+        </div>
+        <button class="rules" onclick="imageshow()">Rules</button>
+        <div class="model-container">
+            <img id="rule-image" src="image/rock-paper-scissors.png" alt="rules image">
+            <button id="exit-button" onclick="imagehide()">X</button>
+        </div>
+        <div class="game-container">
+            <div id="rock" class="selectable rock"><i class="fa-regular fa-hand-back-fist"></i></div>
+            <div id="paper" class="selectable paper"><i class="fa-regular fa-hand"></i></div>
+            <div id="scissors" class="selectable scissors"><i class="fa-regular fa-hand-scissors"></i></div>
+        </div>
+        <div class="winner hide">
+            <div class="selected">
+                <div id="user-result" class="selectable"></div>
+                <p>You Picked</p>
+            </div>
+            <div class="selected">
+                <div id="AI-result" class="selectable"></div>
+                <p>AI Picked</p>
+            </div>
+            <div class="output">
+                <h2 id="won-text"></h2>
+                <button id="reset" class="play">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
